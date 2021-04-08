@@ -1,0 +1,122 @@
+<MainWindow>:
+    orientation: "vertical"
+    func_var: FuncID
+
+    variables_var: VarBoxID
+    znachs_var: ZnachBoxID
+    pogreshns_var: PogresnBoxID
+
+    ishodnoe_podstanovka_var: IshodnoePodstanovkaID
+    ishodnoe_result_var: IshodnoeResultID
+
+    diff_podstanovka_var: DiffPodstanovkaID
+    diff_result_var: DiffResultID
+    diff_virag_var: DiffViragID
+
+    button1_var: Button1ID
+    button2_var: Button2ID
+    button3_var: Button3ID
+
+    TextInput:
+        id: FuncID
+        size_hint_y:  .1
+        multiline: False
+        hint_text: "Введите выражение"
+
+    ScrollView:
+        size_hint_y:  .2
+        bar_width: 100
+
+        bar_color: 0, 0.88, 1, .8
+        bar_inactive_color: 0, 0.88, 1, .8
+        scroll_type: ['bars']
+
+        BoxLayout:
+            size_hint_y: 5 #count of rows
+
+            BoxLayout:
+                id: VarBoxID
+                orientation: "vertical"
+
+            BoxLayout:
+                id: ZnachBoxID
+                orientation: "vertical"
+
+            BoxLayout:
+                id: PogresnBoxID
+                orientation: "vertical"
+
+
+    BoxLayout:
+        size_hint_y:  .1
+        padding: 10
+        spacing: 10
+
+        Button:
+            id: Button1ID
+            size_hint_x: .2
+            text: "Очистка"
+            on_release:
+                root.clean()
+
+        Button:
+            id: Button2ID
+            size_hint_x: .6
+            text: "Посчитать"
+            on_release:
+                root.calculate()
+
+        Button:
+            id: Button3ID
+            size_hint_x: .2
+            text: "Совет"
+            on_release:
+                root.show_popup()
+
+
+    BoxLayout:
+        size_hint_y:  .15
+        padding: 5
+        spacing: 5
+        TextInput:
+            id: IshodnoePodstanovkaID
+            disabled: True
+            background_disabled_normal: '1, 1, 1, 1'
+            hint_text: "Подстановка исходного выражения"
+
+        TextInput:
+            id: IshodnoeResultID
+            size_hint_x: 0.2
+            disabled: True
+            background_disabled_normal: '1, 1, 1, 1'
+            hint_text: "Результат исходного выражения"
+
+    BoxLayout:
+        size_hint_y:  .1
+        padding: 5
+        spacing: 5
+        TextInput:
+            id: DiffViragID
+            disabled: True
+            background_disabled_normal: '1, 1, 1, 1'
+            hint_text: "Дифференецированное выражение"
+
+    BoxLayout:
+        size_hint_y:  .2
+        padding: 5
+        spacing: 5
+        TextInput:
+            id: DiffPodstanovkaID
+            disabled: True
+            background_disabled_normal: '1, 1, 1, 1'
+            hint_text: "Подстановка дифференецированного выражения"
+
+        TextInput:
+            id: DiffResultID
+            size_hint_x: 0.2
+            disabled: True
+            background_disabled_normal: '1, 1, 1, 1'
+            hint_text: "Результат дифференецированного выражения"
+
+#    Label:
+#        size_hint_y:  .15

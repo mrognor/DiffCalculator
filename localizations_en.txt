@@ -1,0 +1,48 @@
+You can't write 3x, you need to write 3*x./n the Degree is ** or ^. /n Supported functions: sin (), cos(), tan ()./n the Constant pi, exp. /n variables with an index must /n be entered before the corresponding /n variables without an index/n Constants in the formula enter/n as variables with 0 error/n Для применения нужен перезапуск /n
+Copy
+Tip
+Formula for the dependence of the indirectly measured value:
+ Constant:
+ Value:
+ Error:
+Variable:
+ Value:
+ Error:
+The result of the calculation is:
+Error formula:
+Error substitution:
+Final margin of error:
+Error!!!
+Error!!!
+Check that the input data is correct
+Error!!!
+Check the variables
+Error!!!
+Error!!!
+Division by zero
+Error!!!
+Error!!!
+Error!!!
+Error!!!
+Substituting the original expression
+Differentiated expression
+Setting a differentiated expression
+Result of the original expression
+Result of a differentiated expression
+Enter a variable
+Entered value
+Enter the margin of error
+
+
+Сверху текст для кода
+Снизу для стандартного гуи
+
+Enter an expression
+Clearing
+Calculate
+Tip
+Substituting the original expression
+Result of the original expression
+Differentiated expression
+Setting a differentiated expression
+Result of a differentiated expression
