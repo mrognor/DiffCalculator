@@ -49,7 +49,7 @@ class MainWindow(BoxLayout):
     box_layout_popup.add_widget(box_layout_languages)
     # добавляем в бокс лэйаут этикетку с текстом
 
-    box_layout_popup.add_widget(Label(text=(mass_locale[0].split("/n")[0] + "\n" + mass_locale[0].split("/n")[1] + "\n" + mass_locale[0].split("/n")[2] + "\n") + mass_locale[0].split("/n")[3] + "\n" + mass_locale[0].split("/n")[4] + "\n" + mass_locale[0].split("/n")[5] + "\n" + mass_locale[0].split("/n")[6] + "\n" + mass_locale[0].split("/n")[7] + "\n" + mass_locale[0].split("/n")[8] + "\n" + mass_locale[0].split("/n")[9] + "\n"))
+    box_layout_popup.add_widget(Label(text=(mass_locale[0].split("//")[0] + "\n" + mass_locale[0].split("//")[1] + "\n" + mass_locale[0].split("//")[2] + "\n") + mass_locale[0].split("//")[3] + "\n" + mass_locale[0].split("//")[4] + "\n" + mass_locale[0].split("//")[5] + "\n" + mass_locale[0].split("//")[6] + "\n" + mass_locale[0].split("//")[7] + "\n" + mass_locale[0].split("//")[8] + "\n" + mass_locale[0].split("//")[9] + "\n"))
     # создаем кнопку для попапа
     button_copy = Button(text=mass_locale[1])
     button_copy.size_hint = [1, 0.4]
@@ -126,7 +126,7 @@ class MainWindow(BoxLayout):
             self.to_clipboard += self.mass_locale[11] + self.diff_virag_var.text + "\n"
             self.to_clipboard += self.mass_locale[12] + self.diff_podstanovka_var.text + "\n"
             self.to_clipboard += self.mass_locale[13] + self.diff_result_var.text
-
+            self.to_clipboard += self.mass_locale[34]
             self.button_copy.on_release = self.to_bufer
 
         except SyntaxError:

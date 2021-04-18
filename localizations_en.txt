@@ -1,4 +1,4 @@
-You can't write 3x, you need to write 3*x./n the Degree is ** or ^. /n Supported functions: sin (), cos(), tan ()./n the Constant pi, exp. /n variables with an index must /n be entered before the corresponding /n variables without an index/n Constants in the formula enter/n as variables with 0 error/n Для применения нужен перезапуск /n
+You can't write 3x, you need to write 3*x.// the Degree is ** or ^. // Supported functions: sin (), cos(), tan ().// the Constant pi, exp. // variables with an index must // be entered before the corresponding // variables without an index// Constants in the formula enter// as variables with 0 error// Donat link: qiwi.com/n/DOMPT293// Для применения нужен перезапуск //
 Copy
 Tip
 Formula for the dependence of the indirectly measured value:
@@ -32,7 +32,7 @@ Result of a differentiated expression
 Enter a variable
 Entered value
 Enter the margin of error
-
+Donat link qiwi.com/n/DOMPT293
 
 Сверху текст для кода
 Снизу для стандартного гуи
